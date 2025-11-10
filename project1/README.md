@@ -1,16 +1,41 @@
-# project1
+# 🚀 مشروع المحاضرة الأولى - Flutter
 
-A new Flutter project.
+هذا المشروع هو التطبيق العملي الأول لمقرر Flutter في الجامعة.
+تم إنشاء هذا التطبيق كمتطلب أساسي لفهم أساسيات إطار العمل Flutter وبنية الواجهات.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🎯 عن المشروع
 
-A few resources to get you started if this is your first Flutter project:
+المشروع عبارة عن تطبيق بسيط يقوم بما يلي:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- يعرض واجهة مستخدم أساسية تحتوي على نصوص، أيقونات، وصور.
+- يحتوي على زر عائم (Floating Action Button) لزيادة عدّاد (Counter).
+- يُظهر كيفية إدارة الحالة البسيطة (Simple State Management) باستخدام `StatefulWidget` و `setState`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## covered المفاهيم التي يغطيها المشروع
+
+هذا المشروع يُغطي المتطلبات الأساسية للمحاضرة العملية الأولى:
+
+- فهم بنية تطبيق فلاتر (`main`, `MaterialApp`, `Scaffold`).
+- التعامل مع الويدجتس الأساسية (`Text`, `Icon`, `Column`, `Center`, `AppBar`).
+- التمييز بين `StatelessWidget` (مثل `MyApp`) و `StatefulWidget` (مثل `MyHomePage`).
+- إدارة الحالة (State) باستخدام `setState` (مثال الـ Counter).
+- جلب الصور من الإنترنت (`Image.network`).
+- جلب الصور من ملفات المشروع (`Image.asset`) والتعريف عنها في `pubspec.yaml`.
+
+---
+
+## 🔧 كيفية تشغيل المشروع
+
+1.  قم بنسخ (Clone) المستودع إلى جهازك.
+2.  تأكد من أن مسار الصورة `image/image1.png` مُعرّف في ملف `pubspec.yaml` بهذا الشكل:
+    ```yaml
+    flutter:
+      assets:
+        - image/image1.png
+    ```
+3.  قم بتشغيل `flutter pub get` في الـ Terminal.
+4.  قم بتشغيل `flutter run` لبدء التطبيق.
